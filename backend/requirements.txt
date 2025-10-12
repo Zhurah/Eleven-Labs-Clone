@@ -1,0 +1,10 @@
+fastapi
+uvicorn[standard]
+torch
+soundfile
+numpy
+pydantic
+scipy
+munch
+transformers
+phonemizer

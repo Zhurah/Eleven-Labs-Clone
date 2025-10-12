@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    // Compilation
+    "target": "ES2022",              // Version JavaScript de sortie
+    "module": "ESNext",              // Système de modules
+    "jsx": "react-jsx",              // Comment gérer le JSX
+
+    // Résolution de modules
+    "moduleResolution": "bundler",   // Comment trouver les imports
+
+    // Vérifications strictes
+    "strict": true,                  // Active TOUTES les vérifications strictes
+    "noUnusedLocals": true,         // ❌ Erreur si variable non utilisée
+    "noUnusedParameters": true,      // ❌ Erreur si paramètre non utilisé
+
+    // Autres
+    "skipLibCheck": true,            // Ignore les erreurs dans node_modules
+    "noEmit": true                   // Ne génère pas de fichiers JS (Vite s'en charge)
+  },
+  "include": ["src"]                 // Vérifie tous les fichiers dans src/
+}
