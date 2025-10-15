@@ -1,0 +1,31 @@
+# robots.txt for VoiClub AI Landing Page
+
+User-agent: *
+Allow: /
+
+# Sitemap location (update with your actual domain)
+Sitemap: https://voiclubai.cloud/sitemap.xml
+
+# Disallow admin paths (if any in future)
+# Disallow: /admin
+# Disallow: /api
+
+# Allow all bots to crawl
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+# Block bad bots (optional)
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
