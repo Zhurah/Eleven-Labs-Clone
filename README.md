@@ -957,37 +957,6 @@ return FileResponse(tmp_path, media_type="audio/wav", filename="output.wav")
 - `fix(frontend): résoudre lecture audio sur Safari`
 - `docs(readme): mettre à jour instructions déploiement`
 
----
-
-## 📄 Licence
-
-Ce projet est sous licence MIT - voir le fichier [LICENSE](./LICENSE) pour plus de détails.
-
-```
-Licence MIT
-
-Copyright (c) 2024 VoiClub AI
-
-La permission est accordée, gratuitement, à toute personne obtenant une copie
-de ce logiciel et des fichiers de documentation associés (le "Logiciel"), de traiter
-le Logiciel sans restriction, y compris sans limitation les droits
-d'utiliser, copier, modifier, fusionner, publier, distribuer, sous-licencier et/ou vendre
-des copies du Logiciel, et de permettre aux personnes à qui le Logiciel est
-fourni de le faire, sous réserve des conditions suivantes :
-
-L'avis de copyright ci-dessus et cet avis de permission doivent être inclus dans toutes
-les copies ou portions substantielles du Logiciel.
-
-LE LOGICIEL EST FOURNI "TEL QUEL", SANS GARANTIE D'AUCUNE SORTE, EXPRESSE OU
-IMPLICITE, Y COMPRIS MAIS SANS S'Y LIMITER LES GARANTIES DE QUALITÉ MARCHANDE,
-D'ADÉQUATION À UN USAGE PARTICULIER ET D'ABSENCE DE CONTREFAÇON. EN AUCUN CAS LES
-AUTEURS OU TITULAIRES DU COPYRIGHT NE SERONT RESPONSABLES DE TOUTE RÉCLAMATION, DOMMAGES OU AUTRE
-RESPONSABILITÉ, QUE CE SOIT DANS UNE ACTION CONTRACTUELLE, DÉLICTUELLE OU AUTRE, DÉCOULANT DE,
-HORS DE OU EN RELATION AVEC LE LOGICIEL OU L'UTILISATION OU D'AUTRES TRANSACTIONS DANS
-LE LOGICIEL.
-```
-
----
 
 ## 🙏 Remerciements
 
@@ -1009,34 +978,18 @@ LE LOGICIEL.
 ## 📧 Contact & Support
 
 **Auteur** : Aurélien Anand
-**Portfolio** : [Votre URL Portfolio]
 **LinkedIn** : [Votre LinkedIn]
 **GitHub** : [@yourusername](https://github.com/yourusername)
 
-### Obtenir de l'Aide
 
-- **Issues** : [GitHub Issues](https://github.com/yourusername/Clone-Eleven-Labs/issues)
-- **Discussions** : [GitHub Discussions](https://github.com/yourusername/Clone-Eleven-Labs/discussions)
-- **Email** : your.email@example.com
+Je suis ouvert aux opportunités de type **"Fullstack AI Engineer"**. Ce projet démontre :
 
-### Vous recrutez ?
+ **Intégration IA/ML** : Déploiement production de modèles PyTorch
+ **Développement Full-Stack** : Frontend React moderne + backend FastAPI
+ **DevOps & Cloud** : Docker, CI/CD, patterns de déploiement cloud
+ **System Design** : Architecture scalable avec séparation appropriée des responsabilités
+ **Qualité du Code** : Type safety, tests, documentation, principes de code propre
 
-Je suis ouvert aux opportunités **Fullstack AI Engineer**. Ce projet démontre :
 
-✅ **Intégration IA/ML** : Déploiement production de modèles PyTorch
-✅ **Développement Full-Stack** : Frontend React moderne + backend FastAPI
-✅ **DevOps & Cloud** : Docker, CI/CD, patterns de déploiement cloud
-✅ **System Design** : Architecture scalable avec séparation appropriée des responsabilités
-✅ **Qualité du Code** : Type safety, tests, documentation, principes de code propre
 
-**Construisons quelque chose d'incroyable ensemble !**
 
----
-
-<div align="center">
-
-**⭐ Si ce projet vous a aidé ou inspiré, merci de lui donner une étoile ! ⭐**
-
-[![Star History Chart](https://api.star-history.com/svg?repos=yourusername/Clone-Eleven-Labs&type=Date)](https://star-history.com/#yourusername/Clone-Eleven-Labs&Date)
-
-</div>
