@@ -1,4 +1,4 @@
-# Voihub AI - Système de Synthèse Vocale Production-Ready
+# Voicehub AI - Système de Synthèse Vocale Production-Ready
 
 <div align="center">
 
