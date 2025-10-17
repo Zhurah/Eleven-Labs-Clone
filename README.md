@@ -38,7 +38,7 @@
 
 ## 🎯 Vue d'ensemble
 
-**Voihub AI** est une plateforme de synthèse vocale (TTS) de niveau entreprise qui démontre des capacités avancées d'ingénierie IA full-stack. Ce projet présente une architecture logicielle professionnelle, des pratiques DevOps modernes et une intégration de modèles IA prête pour la production.
+**Voicehub AI** est une plateforme de synthèse vocale (TTS) de niveau entreprise qui démontre des capacités avancées d'ingénierie IA full-stack. Ce projet présente une architecture logicielle professionnelle, des pratiques DevOps modernes et une intégration de modèles IA prête pour la production.
 
 ### Ce qui rend ce projet unique
 
