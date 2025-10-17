@@ -1188,7 +1188,6 @@ return FileResponse(tmp_path, media_type="audio/wav", filename="output.wav")
 ## 📧 Contact & Support
 
 **Auteur** : Aurélien Anand
-**LinkedIn** : [https://www.linkedin.com/authwall?trk=bf&trkInfo=AQHgyzP2ynwgBQAAAZnyiRRw_EQ06XM0ADhLmMPbZN2zeTay-Efi49-SP3dy_uFx9UYd-qQTGQCeReTVo5GoF7oZWR7bXuWImygLPqySLHI58pX475wyvQsX5Gc6RKU9Bs-g8Yk=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fin%2Faur%25C3%25A9lien-anand-b88a24230%3Futm_source%3Dshare%26utm_campaign%3Dshare_via%26utm_content%3Dprofile%26utm_medium%3Dios_app]
 **GitHub** : [@Zhurah](https://github.com/Zhurah)
 
 
