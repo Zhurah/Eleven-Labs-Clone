@@ -221,34 +221,6 @@ La landing page suit le framework **AIDA + PAS** (Attention, Interest, Desire, A
 - **Hiérarchie Visuelle** : Contraste pour diriger l'attention vers les CTAs
 - **Mobile-First** : 60%+ du trafic web = responsive obligatoire
 
-#### Métriques de Succès (à Implémenter)
-
-1. **Conversion Rate** : Visiteurs → Sign-ups (Target: 3-5%)
-2. **Bounce Rate** : <40% sur Hero section
-3. **Time on Page** : >2 minutes = engagement significatif
-4. **Scroll Depth** : 70%+ atteignent le pricing
-5. **CTA Click Rate** : >10% sur primary CTA
-
-#### Différenciation Compétitive
-
-| Aspect | ElevenLabs | AWS Polly | **Voicehub AI** |
-|--------|-----------|-----------|-----------------|
-| **Qualité** | ⭐⭐⭐⭐⭐ Premium | ⭐⭐⭐ Robotique | ⭐⭐⭐⭐ Naturel |
-| **Prix** | $$$$ Entreprise | $$ Pay-per-use | $ Accessible |
-| **Setup** | Complexe, API | Simple, AWS | **1-Click** |
-| **Customization** | Clonage voix | Limité | **Open-source** |
-| **Déploiement** | Cloud seulement | AWS lock-in | **Self-hosted** |
-
-**Positionnement** : *"La puissance d'ElevenLabs, à la portée de tous"*
-
-#### Ce que Cela Démontre
-
-- **Compréhension du Go-to-Market** : Savoir construire ≠ savoir vendre
-- **Orientation Résultats** : Feature → Bénéfice → Valeur business
-- **Data-Driven Thinking** : Structure optimisée pour mesurer et itérer
-- **Empathie Utilisateur** : Adresser les pain points réels, pas les features imaginées
-- **Vision Produit** : Passer de "démo technique" à "produit commercialisable"
-
 ---
 
 ## 🏗️ Architecture & Décisions de Design
