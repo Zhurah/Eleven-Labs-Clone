@@ -1,4 +1,4 @@
-# VoiClub AI - Système de Synthèse Vocale Production-Ready
+# Voihub AI - Système de Synthèse Vocale Production-Ready
 
 <div align="center">
 
@@ -32,25 +32,24 @@
 - [Déploiement](#déploiement)
 - [Défis & Solutions](#défis--solutions)
 - [Améliorations Futures](#améliorations-futures)
-- [Contribuer](#contribuer)
-- [Licence](#licence)
+
 
 ---
 
 ## 🎯 Vue d'ensemble
 
-**VoiClub AI** est une plateforme de synthèse vocale (TTS) de niveau entreprise qui démontre des capacités avancées d'ingénierie IA full-stack. Ce projet présente une architecture logicielle professionnelle, des pratiques DevOps modernes et une intégration de modèles IA prête pour la production.
+**Voihub AI** est une plateforme de synthèse vocale (TTS) de niveau entreprise qui démontre des capacités avancées d'ingénierie IA full-stack. Ce projet présente une architecture logicielle professionnelle, des pratiques DevOps modernes et une intégration de modèles IA prête pour la production.
 
 ### Ce qui rend ce projet unique
 
 Ce n'est pas qu'un simple clone de TTS—c'est une **démonstration complète d'expertise en ingénierie IA full-stack** :
 
-✅ **Architecture Production-Ready** : Séparation claire des responsabilités, gestion d'erreurs appropriée et patterns de design scalables
-✅ **Intégration de Modèles IA** : Intégration profonde avec Kokoro TTS, incluant une optimisation personnalisée pour Apple Silicon (MPS)
-✅ **Stack Technologique Moderne** : Backend FastAPI avec async/await, React 19 avec TypeScript, conteneurisation Docker
-✅ **DevOps Professionnel** : Git LFS pour les fichiers volumineux, orchestration Docker Compose, structure prête pour CI/CD
-✅ **Fonctionnalités Entreprise** : Documentation API complète, gestion d'erreurs, logging et hooks de monitoring
-✅ **Pratiques de Code Propre** : Typage fort (TypeScript + type hints Python), design modulaire, code documenté
+ **Architecture Production-Ready** : Séparation claire des responsabilités, gestion d'erreurs appropriée et patterns de design scalables
+ **Intégration de Modèles IA** : Intégration profonde avec Kokoro TTS, incluant une optimisation personnalisée pour Apple Silicon (MPS)
+ **Stack Technologique Moderne** : Backend FastAPI avec async/await, React 19 avec TypeScript, conteneurisation Docker
+ **DevOps Professionnel** : Git LFS pour les fichiers volumineux, orchestration Docker Compose, structure prête pour CI/CD
+ **Fonctionnalités Entreprise** : Documentation API complète, gestion d'erreurs, logging et hooks de monitoring
+ **Pratiques de Code Propre** : Typage fort (TypeScript + type hints Python), design modulaire, code documenté
 
 ### Contexte Business
 
@@ -87,75 +86,67 @@ Ce projet a été construit pour démontrer la capacité de :
 ### Backend : FastAPI + PyTorch
 
 **Pourquoi FastAPI ?**
-- ✅ **Performance** : Un des frameworks Python les plus rapides (au niveau de Node.js/Go)
-- ✅ **Async/Await Natif** : Parfait pour les workloads d'inférence IA avec opérations I/O
-- ✅ **Documentation Auto** : Génération OpenAPI/Swagger intégrée
-- ✅ **Type Safety** : Modèles Pydantic avec validation automatique
-- ✅ **Python Moderne** : Exploite les fonctionnalités Python 3.11+
+-  **Performance** : Un des frameworks Python les plus rapides (au niveau de Node.js/Go)
+-  **Async/Await Natif** : Parfait pour les workloads d'inférence IA avec opérations I/O
+-  **Documentation Auto** : Génération OpenAPI/Swagger intégrée
+-  **Type Safety** : Modèles Pydantic avec validation automatique
+-  **Python Moderne** : Exploite les fonctionnalités Python 3.11+
 
 **Pourquoi PyTorch ?**
-- ✅ **Standard Industriel** : Framework le plus populaire pour la recherche et production IA
-- ✅ **Support Apple Silicon** : Backend MPS natif pour Mac M1/M2
-- ✅ **Compatibilité Kokoro** : Kokoro TTS est construit sur PyTorch
-- ✅ **Flexibilité de Déploiement** : Conversion facile vers ONNX pour la production
+-  **Standard Industriel** : Framework le plus populaire pour la recherche et production IA
+-  **Support Apple Silicon** : Backend MPS natif pour Mac M1/M2
+-  **Compatibilité Kokoro** : Kokoro TTS est construit sur PyTorch
+-  **Flexibilité de Déploiement** : Conversion facile vers ONNX pour la production
 
 **Compromis Considérés :**
-- ❌ TensorFlow : Moins flexible, plus verbeux, adoption en déclin
-- ❌ Flask : Architecture synchrone inadaptée aux workloads IA
-- ❌ Django : Trop lourd pour des services API uniquement
+-  TensorFlow : Moins flexible, adoption en déclin par rapport à Pytorch
+-  Flask : Architecture synchrone inadaptée aux workloads IA
+-  Django : Trop lourd pour des services API uniquement
 
 ### Frontend : React 19 + TypeScript + Vite
 
 **Pourquoi React 19 ?**
-- ✅ **Standard Industriel** : Compétence la plus demandée sur le marché
-- ✅ **Réutilisabilité des Composants** : Architecture modulaire pour la scalabilité
-- ✅ **Écosystème Riche** : Bibliothèques et outillage abondants
-- ✅ **Nouveau Compilateur** : Le compilateur React 19 améliore automatiquement les performances
+-  **Standard Industriel** : Compétence la plus demandée sur le marché
+-  **Réutilisabilité des Composants** : Architecture modulaire pour la scalabilité
+-  **Écosystème Riche** : Bibliothèques et outillage abondants
+-  **Nouveau Compilateur** : Le compilateur React 19 améliore automatiquement les performances
 
 **Pourquoi TypeScript ?**
-- ✅ **Type Safety** : Détecte les bugs à la compilation, pas à l'exécution
-- ✅ **Meilleure DX** : IntelliSense, refactoring, documentation
-- ✅ **Standard Entreprise** : Requis pour le développement professionnel
-- ✅ **Application du Contrat API** : Assure la cohérence des types frontend-backend
+-  **Type Safety** : Détecte les bugs à la compilation, pas à l'exécution
+-  **Meilleure DX** : IntelliSense, refactoring, documentation
+-  **Standard Entreprise** : Requis pour le développement professionnel
+-  **Application du Contrat API** : Assure la cohérence des types frontend-backend
 
 **Pourquoi Vite ?**
-- ✅ **Ultra Rapide** : Démarrage instantané du serveur dev avec ESBuild
-- ✅ **Performance HMR** : Hot Module Replacement rapide
-- ✅ **Outillage Moderne** : Modules ES natifs, builds optimisés
-- ✅ **Configuration Simple** : Setup minimal comparé à Webpack
+-  **Ultra Rapide** : Démarrage instantané du serveur dev avec ESBuild
+-  **Performance HMR** : Hot Module Replacement rapide
+-  **Outillage Moderne** : Modules ES natifs, builds optimisés
+-  **Configuration Simple** : Setup minimal comparé à Webpack
 
 **Compromis Considérés :**
-- ❌ Next.js : Surdimensionné pour une SPA, complexité SSR inutile
-- ❌ Vue/Angular : Marché de l'emploi plus petit, moins de support communautaire
-- ❌ Create React App : Déprécié, builds lents
-
-### Landing Page : Tailwind CSS + Framer Motion
-
-**Pourquoi Tailwind CSS ?**
-- ✅ **Utility-First** : Développement UI rapide sans changement de contexte
-- ✅ **Cohérence du Design** : Système de design intégré avec contraintes
-- ✅ **Performance** : CSS purgé résulte en taille de bundle minimale
-- ✅ **Design Responsive** : Approche mobile-first avec breakpoints intuitifs
-
-**Pourquoi Framer Motion ?**
-- ✅ **Animations Production-Ready** : Animations fluides et performantes
-- ✅ **API Déclarative** : Facile à comprendre et maintenir
-- ✅ **Intégration React** : Construit spécifiquement pour l'écosystème React
-- ✅ **Fonctionnalités Avancées** : Détection de gestes, animations layout, chemins SVG
+-  Next.js : Surdimensionné pour une SPA, complexité SSR inutile
+-  Vue/Angular : Marché de l'emploi plus petit, moins de support communautaire
+-  Create React App : Déprécié, builds lents
 
 ### DevOps : Docker + Git LFS
 
 **Pourquoi Docker ?**
-- ✅ **Cohérence d'Environnement** : Problème "ça marche sur ma machine" résolu
-- ✅ **Onboarding Facile** : Nouveaux développeurs opérationnels en minutes
-- ✅ **Parité Production** : Environnement dev correspond à la production
-- ✅ **Prêt Microservices** : Facile à scaler et déployer des services individuels
+-  **Cohérence d'Environnement** : Problème "ça marche sur ma machine" résolu
+-  **Onboarding Facile** : Nouveaux développeurs opérationnels en minutes
+-  **Parité Production** : Environnement dev correspond à la production
+-  **Prêt Microservices** : Facile à scaler et déployer des services individuels
 
 **Pourquoi Git LFS ?**
-- ✅ **Gestion Fichiers Volumineux** : Stockage efficace des fichiers modèles 640MB
-- ✅ **Performance Repository** : Garde les opérations Git rapides
-- ✅ **Optimisation Bande Passante** : Télécharge les fichiers volumineux uniquement si nécessaire
-- ✅ **Contrôle de Version** : Suivi des versions de modèles sans gonfler le repo
+-  **Gestion Fichiers Volumineux** : Stockage efficace des fichiers modèles 640MB
+-  **Performance Repository** : Garde les opérations Git rapides
+-  **Optimisation Bande Passante** : Télécharge les fichiers volumineux uniquement si nécessaire
+-  **Contrôle de Version** : Suivi des versions de modèles sans gonfler le repo
+
+  
+
+### Landing Page 
+
+
 
 ---
 
@@ -228,21 +219,21 @@ Ce projet a été construit pour démontrer la capacité de :
 
 **Rationale** :
 - **Modèle Principal (640MB)** : Coûteux à charger (5-10 secondes)
-  - ✅ Chargé une fois au démarrage via gestionnaire de contexte `lifespan`
-  - ✅ Stocké dans variable globale pour les gestionnaires de requêtes
-  - ✅ Assure une inférence rapide (pas de délai de chargement par requête)
+  -  Chargé une fois au démarrage via gestionnaire de contexte `lifespan`
+  -  Stocké dans variable globale pour les gestionnaires de requêtes
+  -  Assure une inférence rapide (pas de délai de chargement par requête)
 
 - **Packs Voix (500KB chacun)** : Peu coûteux à charger (<100ms)
-  - ✅ Chargés par requête depuis le système de fichiers
-  - ✅ Évite la surcharge mémoire de 11 packs voix en RAM
-  - ✅ Permet les mises à jour dynamiques des packs voix sans redémarrage
+  -  Chargés par requête depuis le système de fichiers
+  -  Évite la surcharge mémoire de 11 packs voix en RAM
+  -  Permet les mises à jour dynamiques des packs voix sans redémarrage
 
 **Référence Code** : `backend/app/main.py:48` (lifespan manager), `main.py:101` (chargement voix)
 
 **Alternative Considérée** : Charger tous les packs voix au démarrage
-- ❌ Utiliserait 5.5MB RAM inutilement
-- ❌ Moins flexible pour la gestion dynamique des voix
-- ✅ Seulement ~100ms plus rapide par requête (négligeable)
+-  Utiliserait 5.5MB RAM inutilement
+-  Moins flexible pour la gestion dynamique des voix
+-  Seulement ~100ms plus rapide par requête (négligeable)
 
 #### 2. **Sélection du Device : MPS vs. CPU**
 
@@ -253,37 +244,37 @@ DEVICE = "mps" if torch.backends.mps.is_available() else "cpu"
 ```
 
 **Rationale** :
-- ✅ **MPS (Metal Performance Shaders)** : 3-5x plus rapide sur Apple Silicon
-- ✅ **Fallback Automatique** : Fonctionne sur toutes les plateformes sans config
-- ✅ **Expérience Développeur** : Zéro configuration requise
+-  **MPS (Metal Performance Shaders)** : 3-5x plus rapide sur Apple Silicon
+-  **Fallback Automatique** : Fonctionne sur toutes les plateformes sans config
+-  **Expérience Développeur** : Zéro configuration requise
 
 **Impact Performance** :
 - MPS (Mac M1/M2) : ~2-3 secondes pour génération 50 mots
 - CPU (Intel/AMD) : ~8-12 secondes pour la même charge
 
 **Alternative Considérée** : Support CUDA
-- ❌ Complexité ajoutée pour setup CUDA/CUDNN
-- ❌ La plupart des développeurs utilisent des Mac ou déploient sur cloud (CPU/MPS suffisant)
-- ⚠️ Pourrait être ajouté plus tard pour serveurs GPU production
+-  Complexité ajoutée pour setup CUDA/CUDNN
+-  La plupart des développeurs utilisent des Mac ou déploient sur cloud (CPU/MPS suffisant)
+-  Pourrait être ajouté plus tard pour serveurs GPU production
 
 #### 3. **Architecture API : REST vs. WebSocket**
 
 **Décision** : API RESTful avec génération synchrone.
 
 **Rationale** :
-- ✅ **Simplicité** : Pattern requête-réponse HTTP standard
-- ✅ **Compatibilité** : Fonctionne avec n'importe quel client HTTP
-- ✅ **Sans État** : Facile à scaler horizontalement
-- ✅ **Mise en Cache** : Headers de cache HTTP possibles
+-  **Simplicité** : Pattern requête-réponse HTTP standard
+-  **Compatibilité** : Fonctionne avec n'importe quel client HTTP
+-  **Sans État** : Facile à scaler horizontalement
+-  **Mise en Cache** : Headers de cache HTTP possibles
 
 **Compromis** :
-- ❌ Pas de streaming : Le client attend la génération audio complète
-- ❌ Pas de mises à jour de progression : Binaire "terminé" ou "erreur"
+-  Pas de streaming : Le client attend la génération audio complète
+-  Pas de mises à jour de progression : Binaire "terminé" ou "erreur"
 
 **Alternative Considérée** : WebSocket pour streaming
-- ⚠️ Implémentation complexe (découper l'audio pendant la génération)
-- ⚠️ Kokoro génère l'audio comme tenseur unique (non streamable)
-- ⚠️ Nécessiterait découpage audio et passes d'inférence multiples
+-  Implémentation complexe (découper l'audio pendant la génération)
+-  Kokoro génère l'audio comme tenseur unique (non streamable)
+-  Nécessiterait découpage audio et passes d'inférence multiples
 
 **Amélioration Future** : Pourrait implémenter SSE (Server-Sent Events) pour mises à jour de progression
 
@@ -292,15 +283,15 @@ DEVICE = "mps" if torch.backends.mps.is_available() else "cpu"
 **Décision** : React `useState` pour l'état local des composants.
 
 **Rationale** :
-- ✅ **Besoins Simples** : Seulement 1 page, état minimal
-- ✅ **Pas d'État Partagé** : Tout l'état est local au composant
-- ✅ **Développement Plus Rapide** : Pas de boilerplate pour Redux/Zustand
-- ✅ **Fonctionnalités React 19** : Optimisations intégrées réduisent le besoin de gestion d'état externe
+-  **Besoins Simples** : Seulement 1 page, état minimal
+-  **Pas d'État Partagé** : Tout l'état est local au composant
+-  **Développement Plus Rapide** : Pas de boilerplate pour Redux/Zustand
+-  **Fonctionnalités React 19** : Optimisations intégrées réduisent le besoin de gestion d'état externe
 
 **Quand Refactoriser** :
-- ⚠️ Si ajout d'authentification utilisateur (état auth partagé)
-- ⚠️ Si ajout historique/favoris (état persistant)
-- ⚠️ Si construction dashboard multi-pages
+-  Si ajout d'authentification utilisateur (état auth partagé)
+-  Si ajout historique/favoris (état persistant)
+-  Si construction dashboard multi-pages
 
 #### 5. **Stratégie de Gestion d'Erreurs**
 
@@ -322,38 +313,38 @@ try {
 ```
 
 **Rationale** :
-- ✅ **Sémantique HTTP Standard** : Utilise 400/404/500 correctement
-- ✅ **Messages d'Erreur Clairs** : Descriptions d'erreur conviviales
-- ✅ **Type Safety** : Interface TypeScript `ApiError`
-- ✅ **Débogage** : Logs backend détaillés avec `logger.exception()`
+-  **Sémantique HTTP Standard** : Utilise 400/404/500 correctement
+-  **Messages d'Erreur Clairs** : Descriptions d'erreur conviviales
+-  **Type Safety** : Interface TypeScript `ApiError`
+-  **Débogage** : Logs backend détaillés avec `logger.exception()`
 
 #### 6. **Stockage Fichiers : Fichiers Temporaires vs. En Mémoire**
 
 **Décision** : Utiliser `tempfile.NamedTemporaryFile` pour les fichiers audio.
 
 **Rationale** :
-- ✅ **Efficacité Mémoire** : L'audio reste sur disque, pas en RAM
-- ✅ **Fichiers Volumineux** : Les fichiers WAV 24kHz peuvent faire 1-5MB
-- ✅ **`FileResponse` FastAPI** : Conçu pour réponses basées fichiers
-- ✅ **Auto-Nettoyage** : L'OS gère la suppression des fichiers temp
+-  **Efficacité Mémoire** : L'audio reste sur disque, pas en RAM
+-  **Fichiers Volumineux** : Les fichiers WAV 24kHz peuvent faire 1-5MB
+-  **`FileResponse` FastAPI** : Conçu pour réponses basées fichiers
+-  **Auto-Nettoyage** : L'OS gère la suppression des fichiers temp
 
 **Compromis** :
-- ❌ Surcharge I/O disque (~10-50ms par écriture fichier)
-- ❌ Espace répertoire temp requis
+-  Surcharge I/O disque (~10-50ms par écriture fichier)
+-  Espace répertoire temp requis
 
 **Alternative Considérée** : `BytesIO` + `StreamingResponse`
-- ⚠️ Nécessite de garder l'audio complet en mémoire
-- ⚠️ Logique de nettoyage plus complexe nécessaire
+-  Nécessite de garder l'audio complet en mémoire
+-  Logique de nettoyage plus complexe nécessaire
 
 #### 7. **Architecture Docker : Monolithe vs. Microservices**
 
 **Décision** : Docker Compose unique avec conteneurs backend/frontend séparés.
 
 **Rationale** :
-- ✅ **Simplicité de Développement** : Un seul `docker-compose up`
-- ✅ **Isolation des Services** : Backend et frontend sont des conteneurs séparés
-- ✅ **Scaling Facile** : Peut scaler le backend indépendamment (`docker-compose up --scale backend=3`)
-- ✅ **Prêt Production** : Se traduit directement en Kubernetes/ECS
+-  **Simplicité de Développement** : Un seul `docker-compose up`
+-  **Isolation des Services** : Backend et frontend sont des conteneurs séparés
+-  **Scaling Facile** : Peut scaler le backend indépendamment (`docker-compose up --scale backend=3`)
+-  **Prêt Production** : Se traduit directement en Kubernetes/ECS
 
 **Design Conteneurs** :
 ```yaml
@@ -417,7 +408,7 @@ npm run dev
 - API Backend : http://localhost:8000
 - Docs API : http://localhost:8000/docs
 
-#### Option 2 : Docker (Recommandé pour la Parité Production)
+#### Option 2 : Docker 
 
 ```bash
 # 1. Cloner et récupérer les fichiers modèles
@@ -507,20 +498,7 @@ npm run preview
 - `src/types.ts` : Définitions de types TypeScript
 - `src/App.css` : Styles des composants
 
-### Développement Landing Page
 
-```bash
-cd landing
-
-# Serveur de développement
-npm run dev
-
-# Build pour la production
-npm run build
-
-# Lint du code
-npm run lint
-```
 
 **Architecture** :
 - Landing page optimisée marketing
@@ -778,102 +756,9 @@ frontend/src/__tests__/
 └── utils.test.ts          # Tests fonctions utilitaires
 ```
 
-**Cas de Test Clés** :
-- ✅ Rend le dropdown de sélection de voix
-- ✅ Affiche erreur pour soumission texte vide
-- ✅ Affiche erreur pour texte de plus de 5000 chars
-- ✅ Fait l'appel API correct avec l'entrée utilisateur
-- ✅ Affiche le lecteur audio après génération
-- ✅ Gère les erreurs API gracieusement
 
-### Tests d'Intégration
-
-```bash
-# Démarrer les deux services
-docker-compose up -d
-
-# Lancer les tests end-to-end
-npm run test:e2e  # (Playwright/Cypress)
 ```
 
----
-
-## 🚢 Déploiement
-
-### Déploiement Docker (Recommandé)
-
-```bash
-# Build des images
-docker-compose build
-
-# Lancer en mode production
-docker-compose -f docker-compose.prod.yml up -d
-
-# Scaler le backend
-docker-compose up -d --scale backend=3
-```
-
-### Options de Déploiement Cloud
-
-#### 1. **AWS (Recommandé pour la Production)**
-
-**Architecture** :
-```
-Route 53 (DNS)
-    ↓
-CloudFront (CDN)
-    ↓
-ALB (Load Balancer)
-    ↓
-ECS Fargate (Conteneurs Backend)
-    ↓
-EFS (Stockage Modèle)
-
-S3 (Hébergement Statique Frontend)
-```
-
-**Coûts Estimés** (pour trafic modéré) :
-- ECS Fargate (2 tâches) : ~$50/mois
-- EFS (modèle 1GB) : ~$0.30/mois
-- ALB : ~$20/mois
-- S3 + CloudFront : ~$5/mois
-- **Total** : ~$75/mois
-
-#### 2. **Google Cloud Platform**
-
-**Services** :
-- **Cloud Run** : Conteneurs auto-scaling (backend)
-- **Cloud Storage** : Hébergement fichier modèle
-- **Cloud CDN** : Distribution frontend
-- **Cloud Load Balancing** : Distribution du trafic
-
-#### 3. **Railway / Render / Fly.io**
-
-**Avantages** :
-- ✅ Déploiement le plus simple (git push pour déployer)
-- ✅ Tier gratuit disponible
-- ✅ HTTPS automatique
-
-**Inconvénients** :
-- ❌ Support GPU limité (inférence CPU uniquement)
-- ❌ Problèmes de démarrage à froid sur tier gratuit
-
-### Checklist Production
-
-- [ ] Définir limite `MAX_CHARS` dans config (prévenir abus)
-- [ ] Configurer rate limiting (prévenir DoS)
-- [ ] Mettre en place monitoring (Prometheus/Grafana ou cloud-natif)
-- [ ] Configurer CORS correctement (restreindre origines)
-- [ ] Utiliser variables d'environnement pour secrets
-- [ ] Mettre en place pipeline CI/CD (GitHub Actions/GitLab CI)
-- [ ] Activer HTTPS (Let's Encrypt ou fournisseur cloud)
-- [ ] Configurer agrégation logs (ELK/CloudWatch)
-- [ ] Mettre en place tracking erreurs (Sentry)
-- [ ] Implémenter health checks
-- [ ] Configurer règles auto-scaling
-- [ ] Mettre en place stratégie backup données utilisateur (si applicable)
-
----
 
 ## 🛠️ Défis & Solutions
 
@@ -894,9 +779,9 @@ S3 (Hébergement Statique Frontend)
 ```
 
 **Alternative Considérée** : Télécharger modèle depuis URL externe au démarrage
-- ❌ Nécessite connexion internet au runtime
-- ❌ Démarrage plus lent à chaque redémarrage
-- ❌ Risque dépendance externe
+-  Nécessite connexion internet au runtime
+-  Démarrage plus lent à chaque redémarrage
+-  Risque dépendance externe
 
 ### Défi 2 : Performance Chargement Modèle
 
@@ -915,9 +800,9 @@ async def lifespan(app: FastAPI):
 ```
 
 **Impact** :
-- ✅ Pénalité unique de 5-10s au démarrage serveur
-- ✅ 0s de temps de chargement par requête
-- ✅ Inférence instantanée (~2-3s temps de génération)
+-  Pénalité unique de 5-10s au démarrage serveur
+-  0s de temps de chargement par requête
+-  Inférence instantanée (~2-3s temps de génération)
 
 ### Défi 3 : Compatibilité Apple Silicon
 
@@ -977,9 +862,9 @@ return FileResponse(tmp_path, media_type="audio/wav", filename="output.wav")
 ```
 
 **Bénéfices** :
-- ✅ Utilisation mémoire constante quel que soit le nombre de requêtes concurrentes
-- ✅ L'OS gère le nettoyage des fichiers temp
-- ✅ FastAPI streame le fichier efficacement
+-  Utilisation mémoire constante quel que soit le nombre de requêtes concurrentes
+-  L'OS gère le nettoyage des fichiers temp
+-  FastAPI streame le fichier efficacement
 
 ---
 
@@ -1023,9 +908,7 @@ return FileResponse(tmp_path, media_type="audio/wav", filename="output.wav")
 
 ---
 
-## 🤝 Contribuer
 
-Les contributions sont les bienvenues ! Ce projet suit les standards professionnels open-source.
 
 ### Setup Développement
 
@@ -1056,20 +939,6 @@ Les contributions sont les bienvenues ! Ce projet suit les standards professionn
    ```bash
    git push origin feature/votre-nom-feature
    ```
-
-### Standards de Code
-
-**Backend (Python)** :
-- Suivre le guide de style PEP 8
-- Utiliser type hints pour toutes les fonctions
-- Écrire docstrings pour APIs publiques
-- Maintenir couverture de tests au-dessus de 70%
-
-**Frontend (TypeScript)** :
-- Utiliser TypeScript strict mode
-- Suivre les meilleures pratiques React
-- Utiliser composants fonctionnels avec hooks
-- Écrire tests unitaires pour logique complexe
 
 ### Format Message Commit
 
